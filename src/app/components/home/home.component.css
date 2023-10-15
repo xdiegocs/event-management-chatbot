@@ -1,0 +1,47 @@
+/* Estilo general de la barra de navegación */
+.navbar {
+    background: linear-gradient(to right, #4caf50, #5b4caf); /* Color de fondo */
+}
+
+/* Color del texto del enlace de la marca de la barra de navegación */
+.navbar-brand {
+    color: black !important;
+    font-weight: bold;
+}
+
+/* Estilo de los elementos de la lista de navegación */
+.nav-item a {
+    color: black !important;
+}
+
+/* Cambiar el color del texto al pasar el ratón */
+.nav-item a:hover {
+    color: #ddd !important;
+}
+
+.btn-primary {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    right: 20px;
+}
+
+/* Cambiar el color al pasar el ratón */
+.btn-primary:hover {
+    background-color: grey; /* Color de fondo */
+    border-color: black; /* Color del borde */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+}

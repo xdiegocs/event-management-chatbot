@@ -1,0 +1,20 @@
+/* Estilo general de la barra de navegación */
+.navbar {
+  background: linear-gradient(to right, #4CAF50, #5b4caf); /* Color de fondo */
+}
+
+/* Color del texto del enlace de la marca de la barra de navegación */
+.navbar-brand {
+  color: black !important;
+  font-weight: bold;
+}
+
+/* Estilo de los elementos de la lista de navegación */
+.nav-item a {
+  color: black !important;
+}
+
+/* Cambiar el color del texto al pasar el ratón */
+.nav-item a:hover {
+  color: #ddd !important;
+}

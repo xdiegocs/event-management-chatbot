@@ -1,0 +1,9 @@
+footer {
+  background: linear-gradient(to right, #4CAF50, #5b4caf); /* Color de fondo */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
