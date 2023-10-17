@@ -3,18 +3,37 @@
   background: linear-gradient(to right, #4CAF50, #5b4caf); /* Color de fondo */
 }
 
-/* Color del texto del enlace de la marca de la barra de navegación */
 .navbar-brand {
-  color: black !important;
+  font-size: 30px;
   font-weight: bold;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Estilo de los elementos de la lista de navegación */
-.nav-item a {
-  color: black !important;
+/* Elimina el estilo de lista por defecto */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;  /* Hace que los ítems se muestren en línea */
+  justify-content: space-between;  /* Distribuye los ítems uniformemente a lo largo del contenedor */
 }
 
-/* Cambiar el color del texto al pasar el ratón */
-.nav-item a:hover {
-  color: #ddd !important;
+/* Estilo para cada ítem de la lista */
+.navbar li {
+  padding: 8px 16px;
+}
+
+/* Estilo para los enlaces */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+/* Cambia el color de fondo al pasar el mouse por encima */
+.navbar a:hover {
+  background-color: #575757;
 }

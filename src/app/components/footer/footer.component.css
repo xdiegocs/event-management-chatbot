@@ -3,7 +3,8 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
   bottom: 0;
   width: 100%;
+  flex-shrink: 0; /* Asegura que el footer no se reduzca y mantenga su altura */
+
 }
