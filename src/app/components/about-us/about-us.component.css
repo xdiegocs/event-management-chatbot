@@ -42,3 +42,9 @@ body {
   flex-direction: column;
   min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
 }
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
