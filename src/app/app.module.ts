@@ -9,7 +9,13 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './components/usuarios/login/login.component';
+import { RecuperarUsuarioComponent } from './components/usuarios/recuperar-usuario/recuperar-usuario.component';
+import { PaginaInicioComponent } from './components/usuarios/pagina-inicio/pagina-inicio.component';
+import { PerfilUsuarioComponent } from './components/usuarios/perfil-usuario/perfil-usuario.component';
+import { PerfilAdminComponent } from './components/administradores/perfil-admin/perfil-admin.component';
+import { RecuperarAdminComponent } from './components/administradores/recuperar-admin/recuperar-admin.component';
+import { LoginAdminComponent } from './components/administradores/login-admin/login-admin.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { LoginComponent } from './components/login/login.component';
     ServicesComponent,
     ContactComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    RecuperarUsuarioComponent,
+    PaginaInicioComponent,
+    PerfilUsuarioComponent,
+    PerfilAdminComponent,
+    RecuperarAdminComponent,
+    LoginAdminComponent
   ],
   imports: [
     BrowserModule,

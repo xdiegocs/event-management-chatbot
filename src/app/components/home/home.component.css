@@ -55,6 +55,23 @@
     border-color: black; /* Color del borde */
 }
 
+.btn-secondary {
+    margin-top: 70px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Cambiar el color al pasar el ratón */
+.btn-primary:hover {
+    background-color: grey; /* Color de fondo */
+    border-color: black; /* Color del borde */
+}
+
 section {
     margin-bottom: 20px;
 }
