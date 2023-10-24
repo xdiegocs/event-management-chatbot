@@ -67,7 +67,7 @@
 }
 
 /* Cambiar el color al pasar el ratón */
-.btn-primary:hover {
+.btn-secondary:hover {
     background-color: grey; /* Color de fondo */
     border-color: black; /* Color del borde */
 }

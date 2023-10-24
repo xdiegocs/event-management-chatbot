@@ -371,4 +371,17 @@ img {
   .forget-pass a:hover::after {
     opacity: 1;
   }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Si deseas espacio entre los botones */
+  }
+
+.btn {
+    padding: 10px 20px;
+    background-color: pink;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
 }

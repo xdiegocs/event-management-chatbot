@@ -16,6 +16,9 @@ import { PerfilUsuarioComponent } from './components/usuarios/perfil-usuario/per
 import { PerfilAdminComponent } from './components/administradores/perfil-admin/perfil-admin.component';
 import { RecuperarAdminComponent } from './components/administradores/recuperar-admin/recuperar-admin.component';
 import { LoginAdminComponent } from './components/administradores/login-admin/login-admin.component';
+import { RegistroUsuarioComponent } from './components/usuarios/registro-usuario/registro-usuario.component';
+import { RegistroAdminComponent } from './components/administradores/registro-admin/registro-admin.component';
+import { PaginaInicioAdminComponent } from './components/administradores/pagina-inicio-admin/pagina-inicio-admin.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { LoginAdminComponent } from './components/administradores/login-admin/lo
     PerfilUsuarioComponent,
     PerfilAdminComponent,
     RecuperarAdminComponent,
-    LoginAdminComponent
+    LoginAdminComponent,
+    RegistroUsuarioComponent,
+    RegistroAdminComponent,
+    PaginaInicioAdminComponent
   ],
   imports: [
     BrowserModule,

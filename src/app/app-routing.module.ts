@@ -11,6 +11,9 @@ import { RecuperarUsuarioComponent } from './components/usuarios/recuperar-usuar
 import { PerfilAdminComponent } from './components/administradores/perfil-admin/perfil-admin.component';
 import { RecuperarAdminComponent } from './components/administradores/recuperar-admin/recuperar-admin.component';
 import { LoginAdminComponent } from './components/administradores/login-admin/login-admin.component';
+import { RegistroUsuarioComponent } from './components/usuarios/registro-usuario/registro-usuario.component';
+import { RegistroAdminComponent } from './components/administradores/registro-admin/registro-admin.component';
+import { PaginaInicioAdminComponent } from './components/administradores/pagina-inicio-admin/pagina-inicio-admin.component';
 
 const routes: Routes = [
   //HOME
@@ -24,11 +27,13 @@ const routes: Routes = [
   { path: 'pagina-inicio', component: PaginaInicioComponent },
   { path: 'perfil-usuario', component: PerfilUsuarioComponent },
   { path: 'recuperar-usuario', component: RecuperarUsuarioComponent },
+  { path: 'registro-usuario', component: RegistroUsuarioComponent },
   //ADMINS
   { path: 'login-admin', component: LoginAdminComponent },
-  { path: 'pagina-inicio-admin', component: PaginaInicioComponent },
+  { path: 'pagina-inicio-admin', component: PaginaInicioAdminComponent },
   { path: 'perfil-admin', component: PerfilAdminComponent },
   { path: 'recuperar-admin', component: RecuperarAdminComponent },
+  { path: 'registro-admin', component: RegistroAdminComponent },
 ];
 
 @NgModule({

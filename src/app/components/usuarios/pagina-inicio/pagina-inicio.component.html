@@ -1,1 +1,56 @@
-<p>pagina-inicio works!</p>
+<header>
+    <div class="logo">
+        <a href=""><img src="assets/logo.png" alt="Logo"></a>
+    </div>
+    <!-- <div class="menu">
+        <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Cotizaciones</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Usuarios</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+        </ul>
+    </div> -->
+    <div class="profile">
+        <a href="perfil-usuario"><img src="assets/perfil-de-usuario.png" alt="Perfil de usuario"></a>
+    </div>
+</header>
+
+<form>
+    <div class="container">
+
+        <div class="form">
+            <h2>Ingreso de Cotización</h2>
+            <table>
+                <tr>
+                    <td><label for="descripcion">Descripción:</label></td>
+                    <td><input type="text" id="descripcion" name="descripcion" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fechaInicio">Fecha Inicio:</label></td>
+                    <td><input type="date" id="fechaInicio" name="fechaInicio" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fechaFin">Fecha Fin:</label></td>
+                    <td><input type="date" id="fechaFin" name="fechaFin" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lugar">Lugar:</label></td>
+                    <td><input type="text" id="lugar" name="lugar" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cantidadPersonas">Cantidad de Personas:</label></td>
+                    <td><input type="number" id="cantidadPersonas" name="cantidadPersonas" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tipoEvento">Tipo de Evento:</label></td>
+                    <td><input type="text" id="evento" name="evento" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Guardar Cotización</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</form>
