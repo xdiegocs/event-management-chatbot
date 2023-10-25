@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro-admin',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro-admin.component.css']
 })
 export class RegistroAdminComponent {
+
+  constructor(private router: Router) {
+
+  }
+
+  submitForm() {  
+    this.router.navigate(['/login-admin']);
+  }
 
 }

@@ -1,0 +1,49 @@
+.form-container {
+  width: 80%;
+  max-width: 500px;
+  margin: 2em auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  background-color: #ffffff;
+}
+
+.input-group {
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.submit-group {
+  text-align: center;
+}
+
+button {
+  padding: 0.8em 1.5em;
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
