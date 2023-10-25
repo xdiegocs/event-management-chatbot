@@ -45,7 +45,14 @@
                 </tr>
                 <tr>
                     <td><label for="tipoEvento">Tipo de Evento:</label></td>
-                    <td><input type="text" id="evento" name="evento" required></td>
+                    <td><select name="tipo_evento" required>
+                        <option value="0">Selecciona el tipo de evento</option> 
+                        <option value="1">Evento de ocio</option>
+                        <option value="2">Evento Personal o familiar</option>
+                        <option value="3">Evento cultural</option>
+                        <option value="4">Evento organizacional</option>
+                        <option value="5">Mega Evento</option>
+                    </select></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button type="submit">Guardar Cotización</button></td>
