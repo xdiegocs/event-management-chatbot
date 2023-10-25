@@ -13,7 +13,7 @@ export class RegistroUsuarioComponent {
   }
 
   submitForm() {  
-    this.router.navigate(['/login-user']);
+    this.router.navigate(['/login-usuario']);
   }
 
 }

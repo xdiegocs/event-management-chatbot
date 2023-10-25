@@ -19,6 +19,9 @@ import { LoginAdminComponent } from './components/administradores/login-admin/lo
 import { RegistroUsuarioComponent } from './components/usuarios/registro-usuario/registro-usuario.component';
 import { RegistroAdminComponent } from './components/administradores/registro-admin/registro-admin.component';
 import { PaginaInicioAdminComponent } from './components/administradores/pagina-inicio-admin/pagina-inicio-admin.component';
+import { UsuariosRoutingModule } from './routes/usuarios-routes';
+import { AdminRoutingModule } from './routes/admins-routes';
+import { HomeRoutingModule } from './routes/home-routes';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { PaginaInicioAdminComponent } from './components/administradores/pagina-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    UsuariosRoutingModule,
+    AdminRoutingModule,
+    HomeRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

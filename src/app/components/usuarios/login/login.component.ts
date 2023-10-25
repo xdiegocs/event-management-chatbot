@@ -11,7 +11,7 @@ export class LoginComponent {
   constructor(private router: Router) { }
 
   vistaInicio() {
-    this.router.navigate(['/pagina-inicio']);
+    this.router.navigate(['/pagina-inicio-usuario']);
   }
 
   vistaRegistro() {
