@@ -22,6 +22,8 @@ import { PaginaInicioAdminComponent } from './components/administradores/pagina-
 import { UsuariosRoutingModule } from './routes/usuarios-routes';
 import { AdminRoutingModule } from './routes/admins-routes';
 import { HomeRoutingModule } from './routes/home-routes';
+import { HttpClientModule } from '@angular/common/http';
+import { GeneralServiceService } from './providers/general-service.service';
 
 @NgModule({
   declarations: [
@@ -49,9 +51,10 @@ import { HomeRoutingModule } from './routes/home-routes';
     NgbModule,
     UsuariosRoutingModule,
     AdminRoutingModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GeneralServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

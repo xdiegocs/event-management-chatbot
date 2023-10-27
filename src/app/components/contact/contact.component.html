@@ -6,21 +6,24 @@
             <h2>CONTACTANOS</h2>
             <form id="chatbot-form">
                 <label for="name">Nombre*</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required #Nombre>
     
                 <label for="lastname">Apellido*</label>
-                <input type="text" id="lastname" name="lastname" required>
+                <input type="text" id="lastname" name="lastname" required #Apellidos>
     
                 <label for="membership-number">Dirección</label>
-                <input type="text" id="membership-number" name="membership-number">
+                <input type="text" id="membership-number" name="membership-number" #Direccion>
     
                 <label for="email">Correo electrónico*</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required #Correo>
     
                 <label for="question">¿Cómo podemos ayudarte?*</label>
-                <textarea id="question" name="question" rows="7" required></textarea>
+                <textarea id="question" name="question" rows="7" required #Mensaje></textarea>
     
-                <button type="submit">Enviar</button>
+                <button class="col btn-1 btn btn-primary"
+                (click)="actualizarPassword(Nombre.value, Apellidos.value, Direccion.value, Correo.value, Mensaje.value)">
+                    Enviar
+                </button>
             </form>
 
             <div class="mapa-container">

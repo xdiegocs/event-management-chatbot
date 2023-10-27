@@ -4,46 +4,46 @@
   <form (ngSubmit)="submitForm()">
     <div class="input-group">
       <label for="nombres">Nombres</label>
-      <input type="text" id="nombres" placeholder="Nombres">
+      <input type="text" id="nombres" placeholder="Nombres" #nombres>
     </div>
 
     <div class="input-group">
       <label for="apellidos">Apellidos</label>
-      <input type="text" id="apellidos" placeholder="Apellidos">
+      <input type="text" id="apellidos" placeholder="Apellidos" #apellidos>
     </div>
 
     <div class="input-group">
       <label for="fechaNacimiento">FechaNacimiento</label>
-      <input type="date" id="fechaNacimiento">
+      <input type="date" id="fechaNacimiento" #fechaNacimiento>
     </div>
 
     <div class="input-group">
       <label for="dpi">DPI</label>
-      <input type="text" id="dpi" placeholder="DPI">
+      <input type="text" id="dpi" placeholder="DPI" #DPI>
     </div>
 
     <div class="input-group">
       <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" placeholder="Teléfono">
+      <input type="tel" id="telefono" placeholder="Teléfono" #telefono>
     </div>
 
     <div class="input-group">
       <label for="direccion">Dirección</label>
-      <input type="text" id="direccion" placeholder="Dirección">
+      <input type="text" id="direccion" placeholder="Dirección" #direccion>
     </div>
 
     <div class="input-group">
       <label for="correo">Correo</label>
-      <input type="email" id="correo" placeholder="Correo">
+      <input type="email" id="correo" placeholder="Correo" #correo>
     </div>
 
     <div class="input-group">
       <label for="contrasena">Contraseña</label>
-      <input type="password" id="contrasena" placeholder="Contraseña">
+      <input type="password" id="contrasena" placeholder="Contraseña" #contrasenia>
     </div>
 
     <div class="submit-group">
-      <button type="submit" (click)="submitForm()">Registrar</button>
+      <button type="submit" (click)="registrarUsuario( nombres.value, apellidos.value, fechaNacimiento.value, DPI.value, telefono.value, direccion.value, correo.value, contrasenia.value)">Registrar</button>
     </div>
   </form>
 </div>
