@@ -46,5 +46,10 @@ body {
 img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  border-radius: 15px;
+  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);*/ /* Sombra a la derecha y hacia abajo */
+  /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); Forma de rombo */
+  /* Efecto de mordidad */
+  background: linear-gradient(to bottom left, transparent 15%, white 15%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 15%, 15% 15%); 
 }

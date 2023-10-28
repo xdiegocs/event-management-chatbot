@@ -5,6 +5,10 @@
     padding: 20px;
     background-color: #f4f4f4;
     height: 100vh;
+    max-width: 60%;      /* Define el ancho máximo del contenedor a la mitad del ancho de la página */
+    margin: 0 auto;      /* Centra el contenedor horizontalmente */
+    text-align: justify; /* Justifica el texto para que tenga un aspecto uniforme */
+    flex: 1 0 auto; /* Hace que el contenido principal ocupe todo el espacio disponible, empujando el footer hacia abajo */
 }
 
 header {
@@ -49,4 +53,24 @@ img {
     overflow: hidden;
     margin-bottom: 20px;
     
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
 }

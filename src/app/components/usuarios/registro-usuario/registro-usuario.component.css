@@ -5,6 +5,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 2em;
   background-color: #ffffff;
+  max-width: 60%;      /* Define el ancho máximo del contenedor a la mitad del ancho de la página */
+  margin: 0 auto;      /* Centra el contenedor horizontalmente */
+  text-align: justify; /* Justifica el texto para que tenga un aspecto uniforme */
+  flex: 1 0 auto; /* Hace que el contenido principal ocupe todo el espacio disponible, empujando el footer hacia abajo */
 }
 
 .input-group {
@@ -38,8 +42,17 @@ button {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  margin: 10px 0;
+  transition: background-color 0.3s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  
+}
+
+button:hover {
+  background-color: #0056b3;
 }
