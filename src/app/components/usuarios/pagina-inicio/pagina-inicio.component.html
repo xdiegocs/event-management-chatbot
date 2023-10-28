@@ -35,6 +35,10 @@
                     <td><input type="number" id="cantidadPersonas" name="cantidadPersonas" required #cantidadPersonas></td>
                 </tr>
                 <tr>
+                    <td><label for="correo">Correo del cliente:</label></td>
+                    <td><input type="text" id="correo" name="correo" required #correo></td>
+                </tr>
+                <tr>
                     <td><label for="tipoEvento">Tipo de Evento:</label></td>
                     <td><select name="tipo_evento" required #evento>
                         <option value="0">Selecciona el tipo de evento</option> 
@@ -44,13 +48,9 @@
                         <option value="4">Evento organizacional</option>
                         <option value="5">Mega Evento</option>
                     </select></td>
-                </tr>
+                </tr>  
                 <tr>
-                    <td><label for="cliente">Nombre del cliente:</label></td>
-                    <td><input type="number" id="cliente" name="cliente" required #cliente></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button type="submit" (click)="registrarCotizaciones(descripcion.value, fechaInicio.value, fechaFin.value, lugar.value, cantidadPersonas.value, evento.value, cliente.value)">Guardar Cotización</button></td>
+                    <td colspan="2"><button type="submit" (click)="registrarCotizaciones(descripcion.value, fechaInicio.value, fechaFin.value, lugar.value, cantidadPersonas.value, correo.value, evento.value )">Guardar Cotización</button></td>
                 </tr>
             </table>
         </div>

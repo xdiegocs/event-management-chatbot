@@ -14,14 +14,14 @@ export class PaginaInicioComponent {
     private router: Router,
     private generalService: GeneralServiceService) { }
 
-    registrarCotizaciones(descripcion: string, fechaInicio: string, fechaFin: string, lugar: string, cantidadPersonas: string, cliente: string, evento: string) {
+    registrarCotizaciones(descripcion: string, fechaInicio: string, fechaFin: string, lugar: string, cantidadPersonas: string, correo: string, evento: string) {
       let cotizaciones: RegCotizacionesModel={
         descripcion: descripcion,
         fechaInicio: fechaInicio,
         fechaFin: fechaFin,
         lugar: lugar,
         cantidadPersonas: cantidadPersonas,
-        cliente: Number(cliente),
+        correo: correo,
         evento: Number(evento),
       };
   
