@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { GeneralServiceService } from 'src/app/providers/general-service.service';
-// import jsPDF from 'jspdf';
-// import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-pagina-inicio-admin',
@@ -11,6 +11,9 @@ import { GeneralServiceService } from 'src/app/providers/general-service.service
 export class PaginaInicioAdminComponent implements OnInit {
 
   cotizaciones: any[] = [];
+  isCreatingPDF = false;
+
+  @ViewChild('reporte', { static: false }) pdfContent: ElementRef | undefined;
 
   constructor(private generalService: GeneralServiceService) { }
 
@@ -42,7 +45,7 @@ export class PaginaInicioAdminComponent implements OnInit {
 //         const imgHeight = canvas.height;
 //         // Crea un nuevo objeto jsPDF con las dimensiones de la imagen
 //         const pdf = new jsPDF({
-//           orientation: 'portrait', // Puedes cambiar a 'landscape' si es necesario
+//           orientation: 'landscape', // Puedes cambiar a 'landscape' si es necesario
 //           unit: 'mm',
 //           format: [imgWidth, imgHeight] // Establece el tamaño del PDF según las dimensiones de la imagen
 //         });
@@ -63,4 +66,46 @@ export class PaginaInicioAdminComponent implements OnInit {
 //       
 //     }
 //   }
+
+ generarPDF() {
+  this.isCreatingPDF = true;
+  
+  if (this.pdfContent) {
+    const content = this.pdfContent.nativeElement;
+      // Captura la vista en un lienzo usando html2canvas
+      html2canvas(content).then(canvas => {
+          // Obtiene las dimensiones de la imagen capturada
+          const imgWidth = canvas.width;
+          const imgHeight = canvas.height;
+
+          // Dimensiones para un PDF en landscape (formato A4)
+          const pdfWidth = 297; // en mm
+          const pdfHeight = 210; // en mm
+          
+          // Escala la imagen para que se ajuste al PDF
+          const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+          const scaledWidth = imgWidth * ratio;
+          const scaledHeight = imgHeight * ratio;
+
+          // Crea un nuevo objeto PDF con orientación landscape
+          const pdf = new jsPDF({
+              orientation: 'landscape',
+              unit: 'mm',
+              format: [pdfWidth, pdfHeight]
+          });
+          
+          // Convierte el lienzo a una imagen base64
+          const imgData = canvas.toDataURL('image/png');
+          
+          // Agrega la imagen al PDF
+          pdf.addImage(imgData, 'PNG', 0, 0, scaledWidth, scaledHeight);
+          
+          // Descarga el PDF con un nombre de archivo
+          pdf.save('Reporte.pdf');
+      });
+  } else {
+      console.error('El elemento pdfContent no está definido.');
+  }
 }
+}
+
