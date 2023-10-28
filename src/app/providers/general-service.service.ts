@@ -7,6 +7,7 @@ import { ClientesModel } from '../models/clientes-model';
 import { AdminsModel } from '../models/admins-model';
 import { regClienteModel } from '../models/regCliente-model';
 import { regAdminModel } from '../models/regAdmin-model';
+import { RegCotizacionesModel } from '../models/regCotizaciones';
 
 @Injectable({
   providedIn: 'root'
@@ -43,6 +44,10 @@ export class GeneralServiceService {
   
   regAdmin(data: regAdminModel): Observable<any> {
     return this.http.post<any>(`${this.URL}admin/registrar`, data);
+  }
+
+  regCotizaciones(data: RegCotizacionesModel): Observable<any> {
+    return this.http.post<any>(`${this.URL}cotizacion/nueva`, data);
   }
 
 }

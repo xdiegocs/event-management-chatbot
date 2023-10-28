@@ -34,16 +34,12 @@ input[type="password"] {
 }
 
 button {
-  padding: 0.8em 1.5em;
-  background-color: #007bff;
+  background-color: #333;
+  color: #fff;
   border: none;
-  color: #ffffff;
-  border-radius: 4px;
-  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: #0056b3;
+  font-size: 16px;
+  margin: 10px 0;
 }

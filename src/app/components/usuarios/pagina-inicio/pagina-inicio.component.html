@@ -1,19 +1,10 @@
 <header>
     <div class="logo">
-        <a href=""><img src="assets/logo.png" alt="Logo"></a>
+        <a href="pagina-inicio-usuario"><img src="assets/img/logo.png" alt="Logo"></a>
     </div>
-    <!-- <div class="menu">
-        <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Cotizaciones</a></li>
-        <li><a href="#">Clientes</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Usuarios</a></li>
-        <li><a href="#">Cerrar Sesión</a></li>
-        </ul>
-    </div> -->
+    
     <div class="profile">
-        <a href="perfil-usuario"><img src="assets/perfil-de-usuario.png" alt="Perfil de usuario"></a>
+        <a href="perfil-usuario"><img src="assets/img/imagen-de-perfil.png" alt="Perfil de usuario"></a>
     </div>
 </header>
 
@@ -25,27 +16,27 @@
             <table>
                 <tr>
                     <td><label for="descripcion">Descripción:</label></td>
-                    <td><input type="text" id="descripcion" name="descripcion" required></td>
+                    <td><input type="text" id="descripcion" name="descripcion" required #descripcion></td>
                 </tr>
                 <tr>
                     <td><label for="fechaInicio">Fecha Inicio:</label></td>
-                    <td><input type="date" id="fechaInicio" name="fechaInicio" required></td>
+                    <td><input type="date" id="fechaInicio" name="fechaInicio" required #fechaInicio></td>
                 </tr>
                 <tr>
                     <td><label for="fechaFin">Fecha Fin:</label></td>
-                    <td><input type="date" id="fechaFin" name="fechaFin" required></td>
+                    <td><input type="date" id="fechaFin" name="fechaFin" required #fechaFin></td>
                 </tr>
                 <tr>
                     <td><label for="lugar">Lugar:</label></td>
-                    <td><input type="text" id="lugar" name="lugar" required></td>
+                    <td><input type="text" id="lugar" name="lugar" required #lugar></td>
                 </tr>
                 <tr>
                     <td><label for="cantidadPersonas">Cantidad de Personas:</label></td>
-                    <td><input type="number" id="cantidadPersonas" name="cantidadPersonas" required></td>
+                    <td><input type="number" id="cantidadPersonas" name="cantidadPersonas" required #cantidadPersonas></td>
                 </tr>
                 <tr>
                     <td><label for="tipoEvento">Tipo de Evento:</label></td>
-                    <td><select name="tipo_evento" required>
+                    <td><select name="tipo_evento" required #evento>
                         <option value="0">Selecciona el tipo de evento</option> 
                         <option value="1">Evento de ocio</option>
                         <option value="2">Evento Personal o familiar</option>
@@ -55,7 +46,11 @@
                     </select></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button type="submit">Guardar Cotización</button></td>
+                    <td><label for="cliente">Nombre del cliente:</label></td>
+                    <td><input type="number" id="cliente" name="cliente" required #cliente></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" (click)="registrarCotizaciones(descripcion.value, fechaInicio.value, fechaFin.value, lugar.value, cantidadPersonas.value, evento.value, cliente.value)">Guardar Cotización</button></td>
                 </tr>
             </table>
         </div>
