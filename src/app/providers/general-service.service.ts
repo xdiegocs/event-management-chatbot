@@ -8,6 +8,7 @@ import { AdminsModel } from '../models/admins-model';
 import { regClienteModel } from '../models/regCliente-model';
 import { regAdminModel } from '../models/regAdmin-model';
 import { RegCotizacionesModel } from '../models/regCotizaciones';
+import { ReContraseniaAdminModel } from '../models/ReAdmin-model';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +25,10 @@ export class GeneralServiceService {
 
   actualizarContrasena(data: ReContraseniaModel): Observable<any> {
     return this.http.put<any>(`${this.URL}usuarios/actualizarContrasenia`, data);
+  }
+  
+  actualizarContrasenaAdmin(data: ReContraseniaAdminModel): Observable<any> {
+    return this.http.put<any>(`${this.URL}admin/actualizarAContrasenia`, data);
   }
 
   ingresarContacto(data: ContactosModel): Observable<any> {

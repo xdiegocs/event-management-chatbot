@@ -1,38 +1,54 @@
+/* Centramos el contenedor del perfil en el centro de la página */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;  /* Color de fondo suave */
+}
+
 .profile-container {
-    border: 1px solid black;
+    border: 1px solid #e0e0e0;
     width: 400px;
-    padding: 20px;
+    padding: 40px;  /* Más espacio interior */
     box-sizing: border-box;
+    background-color: #ffffff;  /* Fondo blanco para el contenedor */
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;  /* Más espacio bajo el logo */
 }
 
 .user-logo {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    margin: 0 auto;  /* Centra el logo horizontalmente */
 }
 
 .user-info .info-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;  /* Más espacio entre filas de información */
 }
 
 .label, .info {
-    font-size: 14px;
+    font-size: 16px;  /* Texto un poco más grande */
+    font-weight: 500;
 }
 
 .edit-button {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    padding: 5px 10px;
+    padding: 7px 14px;  /* Botón un poco más grande */
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-left: 20px;  /* Más espacio entre el botón y la información */
 }
 
 .edit-button:hover {
@@ -42,12 +58,13 @@
 .delete-button {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 12px;  /* Botón un poco más alto */
     background-color: red;
     color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-radius: 6px;
 }
 
 .delete-button:hover {

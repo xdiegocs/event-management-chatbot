@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ReContraseniaModel } from 'src/app/models/usuarios-model';
 import { GeneralServiceService } from 'src/app/providers/general-service.service';
 
@@ -7,9 +8,17 @@ import { GeneralServiceService } from 'src/app/providers/general-service.service
   templateUrl: './recuperar-usuario.component.html',
   styleUrls: ['./recuperar-usuario.component.css']
 })
-export class RecuperarUsuarioComponent {
+export class RecuperarUsuarioComponent implements OnInit {
 
-  constructor(private generalService: GeneralServiceService) { }
+  OnInit() {
+  
+  }
+
+  constructor(private generalService: GeneralServiceService,
+    private router: Router) { }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   actualizarPassword(correo: string, contraseniaactual: string, contrasenianueva: string) {
     let usuario:ReContraseniaModel={
@@ -23,6 +32,7 @@ export class RecuperarUsuarioComponent {
       console.log(response);
       if (response.success == true){
         alert('Contraseña actualizada correctamente');
+        this.router.navigate(['/login-usuario']);
       }
       else{
         alert('Error al actualizar contraseña');
