@@ -19,9 +19,6 @@ import { LoginAdminComponent } from './components/administradores/login-admin/lo
 import { RegistroUsuarioComponent } from './components/usuarios/registro-usuario/registro-usuario.component';
 import { RegistroAdminComponent } from './components/administradores/registro-admin/registro-admin.component';
 import { PaginaInicioAdminComponent } from './components/administradores/pagina-inicio-admin/pagina-inicio-admin.component';
-import { UsuariosRoutingModule } from './routes/usuarios-routes';
-import { AdminRoutingModule } from './routes/admins-routes';
-import { HomeRoutingModule } from './routes/home-routes';
 import { HttpClientModule } from '@angular/common/http';
 import { GeneralServiceService } from './providers/general-service.service';
 
@@ -49,9 +46,9 @@ import { GeneralServiceService } from './providers/general-service.service';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    UsuariosRoutingModule,
-    AdminRoutingModule,
-    HomeRoutingModule,
+    // UsuariosRoutingModule,
+    // AdminRoutingModule,
+    // HomeRoutingModule,
     HttpClientModule
   ],
   providers: [GeneralServiceService],

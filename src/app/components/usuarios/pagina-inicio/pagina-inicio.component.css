@@ -91,3 +91,16 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.boton-cerrarSesion{
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 20px;
+    right: 0;
+    top: 0; /* o cualquier otro valor que desees */
+    float: right;
+}

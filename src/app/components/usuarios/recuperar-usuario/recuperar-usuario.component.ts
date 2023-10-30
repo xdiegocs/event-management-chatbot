@@ -8,17 +8,12 @@ import { GeneralServiceService } from 'src/app/providers/general-service.service
   templateUrl: './recuperar-usuario.component.html',
   styleUrls: ['./recuperar-usuario.component.css']
 })
-export class RecuperarUsuarioComponent implements OnInit {
+export class RecuperarUsuarioComponent {
 
-  OnInit() {
-  
-  }
+
 
   constructor(private generalService: GeneralServiceService,
     private router: Router) { }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
 
   actualizarPassword(correo: string, contraseniaactual: string, contrasenianueva: string) {
     let usuario:ReContraseniaModel={

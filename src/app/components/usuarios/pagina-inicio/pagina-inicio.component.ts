@@ -28,6 +28,11 @@ export class PaginaInicioComponent {
       this.generalService.regCotizaciones(cotizaciones).subscribe(response => {
         console.log('FASE 1');
         console.log(response);
+
+        if (response.success == true){
+          alert('Cotizacion registrada correctamente');
+          this.router.navigate(['/pagina-inicio-usuario']);
+        }
         
       }, error => {
         console.log('FASE 2');

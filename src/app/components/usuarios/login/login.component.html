@@ -15,7 +15,7 @@
       <h1>Inicia sesión<br />en tu cuenta</h1>
 
       <div class="login-form">
-        <form action="">
+        <form>
           <input type="email" placeholder="Correo Electrónico" #correo>
           <input type="password" placeholder="Contraseña" #contrasenia>
 
@@ -27,12 +27,11 @@
             <a href="recuperar-usuario">Olvidaste tu contraseña ?</a>
           </div>
           <div class="cuenta-registro">
-            <a href="registro-usuario">No tienes cuenta ?</a>
+            <a routerLink="/registro-usuario">No tienes cuenta ?</a>
           </div>
 
-          <div class="button-container">
-            <button type="submit" (click)="iniciarSesion(correo.value, contrasenia.value)">LOG-IN</button>
-          </div>
+          <!-- <button type="submit" (click)="iniciarSesion(correo.value, contrasenia.value)">LOG-IN</button> -->
+          <button type="submit" routerLink="/pagina-inicio-usuario">LOG-IN</button>
 
         </form>
       </div>
